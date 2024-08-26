@@ -23,7 +23,6 @@ app.get("/data", (req, res) => {
 
   let clientCertCN = "N/A";
   let clientCertIssuer = "N/A";
-  console.log(cert);
   if (cert && cert.subject && cert.issuer) {
     clientCertCN = cert.subject.CN || "N/A";
     clientCertIssuer = cert.issuer.CN || "N/A";
