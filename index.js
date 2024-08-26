@@ -53,9 +53,9 @@ app.get("/data", (req, res) => {
   res.json(data);
 });
 
-// app.listen(port, () => {
-//   console.log(`Server is running at http://localhost:${port}`);
-// });
-https.createServer(options, app).listen(port, () => {
-  console.log(`Server is running at https://localhost:${port}`);
+app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`);
 });
+// https.createServer(options, app).listen(port, () => {
+//   console.log(`Server is running at https://localhost:${port}`);
+// });
