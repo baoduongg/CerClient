@@ -18,7 +18,7 @@ const options = {
 };
 
 app.get("/data", (req, res) => {
-  const cert = req.socket.getPeerCertificate();
+  // const cert = req.socket.getPeerCertificate();
   console.log(cert);
 
   let clientCertCN = "N/A";
